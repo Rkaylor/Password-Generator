@@ -1,34 +1,24 @@
-// Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// 1. Change variable names to your own
-// 2. Change the groups of code into functions and call/execute them at the right places
-// 3. Modify or remove the comments
-
-// ***********
-// DATA
-// ***********
-
-// change the all varialbe names, comments, etc.
+//Variables 
 var lowerText = "abcdefghijklmnopqrstuvwxyz";
 var upperText = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var spcText = "$#@!~^&*()_+[]{}"; // might need more 
 var nmbrstr = "0123456789";
 
-// you could change varialbes into hard coded arrays such as ['a', 'b', ... ]
 var lowerCaseArr = "abcdefghijklmnopqrstuvwxyz".split("");
 var upperCaseArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 var spclArr = "$#@!~^&*()_+[]{}".split(""); // could need modification
 var nmbrArr = "0123456789".split("");
 
-//store user's input
+//Store user's input
 var confirmNumbers = false;
 var confirmUpper = false;
 var confirmLower = false;
 var confirmSpecial = false;
 var lenPwdChosen = 0;
 
-var minLen = 8;
+var minLen = 10;
 var _password = "";
 
 // log to see data
@@ -38,12 +28,12 @@ console.log(spclArr);
 console.log(nmbrArr);
 
 
-// User Input - function ()?
+// User Input - function 
 
 
 lenPwdChosen = prompt("Enter the length of your password");
 while (lenPwdChosen < minLen) {
-  alert("Length of password has to be greater than 6");
+  alert("Length of password has to be greater than 10");
   lenPwdChosen = prompt("Enter the length of your password");
 } 
 
